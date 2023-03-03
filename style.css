@@ -29,6 +29,10 @@ html {
   margin: 0;
 }
 
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .container {
   display: flex;
 }
@@ -38,6 +42,16 @@ html {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+.sidebar .logo .logo-text {
+  font-family: norse-bold;
+  color: white;
 }
 
 .container .form-container {
@@ -50,10 +64,6 @@ html {
   background-color: #F9FAFB;
   padding: 160px 32px 64px 32px;
   font-weight: bold;
-}
-
-.form-container > div p i {
-  font-style: italic;
 }
 
 .form-container > div p:last-child {
