@@ -82,8 +82,12 @@ body {
 
 .form-container > div {
   background-color: #F9FAFB;
-  padding: 160px 32px 64px 32px;
+  padding: 124px 32px 64px 32px;
   font-weight: bold;
+}
+
+.form-container > div p {
+  font-size: 1.5rem;
 }
 
 .form-container > div p:last-child {
@@ -96,11 +100,12 @@ body {
 }
 
 form legend {
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
-form div {
-  padding-top: 16px;
+form > div > div {
+  padding-top: 40px;
 }
 
 form:last-child {
@@ -114,4 +119,55 @@ form:last-child {
 
 .form-container .form-row div {
   flex: 1;
+}
+
+div[class^="form-row-"] > input {
+  background-color: #fff;
+  appearance: none;
+  outline: none;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  padding: 10px 8px 10px;
+  width: 284px;
+  font-size: 1rem;
+}
+
+div[class^="form-row-"] > input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 5px -3px blue;
+}
+
+div[class^="form-row-"] {
+  position: relative;
+}
+
+div[class^="form-row-"] > label {
+  position: absolute;
+  top: 23px;
+  left: 0px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+div[class^="form-row-submit"] > button {
+  background-color: #596D48;
+  outline: none;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 32px;
+  border: 0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  transition: all .15s ease-in-out;
+}
+
+div[class^="form-row-submit"] > button:hover {
+  background-color: #557D31;
+}
+div[class^="form-row-submit"] a {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: bold;
 }
