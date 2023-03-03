@@ -48,6 +48,7 @@ body {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  width: 20vw;
   flex: 1;
   position: relative;
 }
@@ -78,6 +79,22 @@ body {
   margin: auto 0;
 }
 
+.sidebar .credits {
+  position: absolute;
+  color: rgb(255, 255, 255, .5);
+  font-size: 1rem;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.sidebar .credits a {
+  text-decoration: underline;
+  color: rgb(255, 255, 255, .5);
+  font-size: 1rem;
+}
+
 /* Form */
 .container .form-container {
   display: flex;
@@ -102,6 +119,7 @@ body {
 .form-container form {
   padding-top: 32px;
   padding-left: 32px;
+  flex: 1;
 }
 
 form legend {
@@ -175,4 +193,23 @@ div[class^="form-row-submit"] a {
   text-decoration: none;
   color: #596D48;
   font-weight: bold;
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 0 8px;
+}
+
+.fa-github {
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+  color: #596D48;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
 }
