@@ -1,0 +1,87 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.container .sidebar {
+  background: url("images/halie-west-25xggax4bSA-unsplash.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.container .form-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-container > div {
+  background-color: #F9FAFB;
+  padding: 160px 32px 64px 32px;
+  font-weight: bold;
+}
+
+.form-container > div p i {
+  font-style: italic;
+}
+
+.form-container > div p:last-child {
+  margin-top: 32px;
+}
+
+.form-container form {
+  padding-top: 32px;
+  padding-left: 32px;
+}
+
+form legend {
+  font-weight: bold;
+}
+
+form div {
+  padding-top: 16px;
+}
+
+form:last-child {
+  padding-bottom: 180px;
+}
+
+.container .form-container .form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-container .form-row div {
+  flex: 1;
+}
