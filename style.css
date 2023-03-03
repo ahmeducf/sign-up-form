@@ -37,11 +37,28 @@ body {
   display: flex;
 }
 
+/* Sidebar */
 .container .sidebar {
   background: url("images/halie-west-25xggax4bSA-unsplash.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  flex: 1;
+  position: relative;
+}
+
+.sidebar .logo {
+  background-color: rgb(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 180px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.sidebar .logo img {
+  width: 100px;
 }
 
 @font-face {
@@ -52,12 +69,15 @@ body {
 .sidebar .logo .logo-text {
   font-family: norse-bold;
   color: white;
+  font-size: 4.5rem;
+  margin: auto 0;
 }
 
+/* Form */
 .container .form-container {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 2.3;
 }
 
 .form-container > div {
