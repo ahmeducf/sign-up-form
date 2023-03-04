@@ -172,6 +172,20 @@ div[class^="form-row-"] > label {
   font-size: 0.9rem;
 }
 
+input[type="email"]:focus:invalid,
+input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
+  border-color: red;
+  box-shadow: 2px 2px 5px -3px red;
+}
+input[type="email"]:not(:placeholder-shown):not(:focus):invalid + label {
+  color: red;
+}
+input[type="email"]:not(:placeholder-shown):not(:focus):invalid + label::after {
+  color: red;
+  text-transform: none;
+  content: " (" attr(data-help) ")";
+}
+
 div[class^="form-row-submit"] > button {
   background-color: #596D48;
   outline: none;

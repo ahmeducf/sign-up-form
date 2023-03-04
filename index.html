@@ -35,25 +35,25 @@
   
         <div class="form-row">
           <div class="form-row-first-name">
-            <input type="text" name="first-name" id="first-name" required>
+            <input type="text" name="first-name" id="first-name" placeholder="Ahmed" required>
             <label for="first-name">first name *</label>
           </div>
     
           <div class="form-row-last-name">
-            <input type="text" name="last-name" id="last-name" required>
+            <input type="text" name="last-name" id="last-name" placeholder="Salah" required>
             <label for="last-name">last name *</label>
           </div>
         </div>
   
         <div class="form-row">
           <div class="form-row-email">
-            <input type="email" name="email" id="email" required>
-            <label for="email" data-help="Format email@email.com">email *</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            <label for="email" data-help="Format example@example.com">email *</label>
           </div>
           
           <div class="form-row-phone-number">
-            <input type="tel" name="phone-number" id="phone-number">
-            <label for="phone-number">phone number</label>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="011 222 333">
+            <label for="phone-number">phone number (optional)</label>
           </div>
           
         </div>
